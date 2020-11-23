@@ -3,6 +3,15 @@
 ## Build Setup
 
 ```bash
+# make cert file for debug on tablet or smartphone
+$ brew install mkcert
+$ mkcert -install
+
+$ mkdir cert
+$ cd cert
+$ mkcert localhost
+# localhost-key.pemとlocalhost.pemがcertディレクトリ内にあればOK
+
 # install dependencies
 $ npm install
 
